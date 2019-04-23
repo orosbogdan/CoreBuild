@@ -1,9 +1,5 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SuperheroWars
 {
@@ -17,8 +13,8 @@ namespace SuperheroWars
 
         public override string ToString()
         {
-            return String.Format("{0} {1} {2} " + Environment.NewLine + "Modifiers {3}" + Environment.NewLine, 
-                                Id,Name,Description,JsonConvert.SerializeObject(Modifiers));
+            return string.Format("{0} {1} {2} " + Environment.NewLine + "Modifiers {3}" + Environment.NewLine,
+                                Id, Name, Description, JsonConvert.SerializeObject(Modifiers));
         }
     }
 }

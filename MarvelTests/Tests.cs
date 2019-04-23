@@ -1,8 +1,7 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SuperheroWars;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SuperheroWars;
 
 namespace MarvelTests
 {
@@ -69,8 +68,10 @@ namespace MarvelTests
 
             BattleWorld battleWorld = new BattleWorld();
 
-            List<Character> heroes = new List<Character>();
-            heroes.Add(hero);
+            List<Character> heroes = new List<Character>
+            {
+                hero
+            };
 
             BattleWorld.Battle(heroes, villain, planet);
 
@@ -128,8 +129,10 @@ namespace MarvelTests
 
             BattleWorld battleWorld = new BattleWorld();
 
-            List<Character> heroes = new List<Character>();
-            heroes.Add(hero);
+            List<Character> heroes = new List<Character>
+            {
+                hero
+            };
 
             BattleWorld.Battle(heroes, villain, planet);
 
